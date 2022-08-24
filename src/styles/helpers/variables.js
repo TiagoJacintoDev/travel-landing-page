@@ -1,36 +1,37 @@
-export const variable = {
-  fontSize: {
+export const variables = {
+  fs: {
     small: '0.6rem',
     medium: '1rem',
     large: '1.5rem',
     larger: '2.5rem',
   },
-  fontWeight: {
+  fw: {
     regular: 400,
     semiBold: 500,
     bold: 700,
   },
-  fontFamily: {
-    logo: 'ZCOOL KuaiLe',
-    default: 'Inter',
+  ff: {
+    logo: 'ZCOOL KuaiLe, cursive',
+    default: 'Inter, sans-serif',
   },
   size: {
+    smaller: '20px',
     small: '60px',
     medium: '110px',
     large: '150px',
   },
-  colors: {
+  color: {
     accent: '#FE5107',
     black: 'black',
     white: 'white',
     lightGray: '#C4C4C4',
     lightDark: '#0A0A0A',
   },
-  deviceSize: {
-    mobile: 640,
-    tablet: 768,
-    laptop: 1024,
-    desktop: 1280,
-    widescreen: 1536,
+  ds: {
+    mobile: '640px',
+    tablet: '768px',
+    laptop: '1024px',
+    desktop: '1280px',
+    widescreen: '1536px',
   },
 };
