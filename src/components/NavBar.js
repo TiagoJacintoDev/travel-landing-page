@@ -3,11 +3,12 @@ import { Link } from 'react-scroll';
 import { slide as Menu } from 'react-burger-menu';
 import { useMediaQuery } from 'react-responsive';
 import { variables as v } from '../styles/helpers/variables';
+import { Container } from '../styles/helpers/helpers';
 
 const NavWrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding-top: ${v.size.smaller};
 `;
 
@@ -20,7 +21,10 @@ const Logo = styled.h1`
 const NavList = styled.ul`
   display: flex !important;
   flex-direction: column;
-  gap: ${v.size.smaller};
+  gap: ${v.size.small};
+  @media (min-width: ${v.ds.laptop}) {
+    gap: ${v.size.medium};
+  }
   align-items: center;
   font-family: ${v.ff.default};
 
@@ -40,13 +44,15 @@ const NavItems = (
 );
 
 export default function NavBar() {
-  const isNotMobile = useMediaQuery({
-    query: `(min-width: ${v.ds.tablet})`,
+  const isMobile = useMediaQuery({
+    query: `(max-width: ${v.ds.tablet})`,
   });
   return (
-    <NavWrapper>
-      <Logo>TRAVELIA</Logo>
-      {isNotMobile ? NavItems : <Menu right>{NavItems}</Menu>}
-    </NavWrapper>
+    <Container>
+      <NavWrapper>
+        <Logo>TRAVELIA</Logo>
+        {isMobile ? <Menu right>{NavItems}</Menu> : NavItems}
+      </NavWrapper>
+    </Container>
   );
 }

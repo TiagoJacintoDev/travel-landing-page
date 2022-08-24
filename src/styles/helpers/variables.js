@@ -3,7 +3,7 @@ export const variables = {
     small: '0.6rem',
     medium: '1rem',
     large: '1.5rem',
-    larger: '2.5rem',
+    larger: '9vmin',
   },
   fw: {
     regular: 400,
@@ -15,6 +15,7 @@ export const variables = {
     default: 'Inter, sans-serif',
   },
   size: {
+    smallest: '10px',
     smaller: '20px',
     small: '60px',
     medium: '110px',

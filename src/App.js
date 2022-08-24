@@ -1,5 +1,9 @@
-import NavBar from './components/NavBar';
+import TopSection from './sections/TopSection';
 
 export default function App() {
-  return <NavBar />;
+  return (
+    <>
+      <TopSection />
+    </>
+  );
 }
