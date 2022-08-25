@@ -37,7 +37,7 @@ const SubTitle = styled.p`
 
 const HeroTitle = styled.h1`
   font-family: ${v.ff.default};
-  font-size: ${v.fs.larger};
+  font-size: ${v.fs.largest};
   font-weight: ${v.fw.bold};
   width: 15ch;
   margin-bottom: ${v.size.smaller};

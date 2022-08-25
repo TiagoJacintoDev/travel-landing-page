@@ -15,4 +15,5 @@ export const Button = styled.button`
   background-color: ${v.color.accent};
   border: none;
   padding: ${v.size.smaller} ${v.size.smaller};
+  cursor: pointer;
 `;

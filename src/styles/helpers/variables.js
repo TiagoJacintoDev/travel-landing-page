@@ -3,7 +3,8 @@ export const variables = {
     small: '0.6rem',
     medium: '1rem',
     large: '1.5rem',
-    larger: '9vmin',
+    larger: '3.2rem',
+    largest: '9vmin',
   },
   fw: {
     regular: 400,
@@ -12,7 +13,7 @@ export const variables = {
   },
   ff: {
     logo: 'ZCOOL KuaiLe, cursive',
-    default: 'Inter, sans-serif',
+    default: 'Nunito Sans, sans-serif',
   },
   size: {
     smallest: '10px',
