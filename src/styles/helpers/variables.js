@@ -8,7 +8,7 @@ export const variables = {
   },
   fw: {
     regular: 400,
-    semiBold: 500,
+    semiBold: 600,
     bold: 700,
   },
   ff: {
@@ -21,6 +21,7 @@ export const variables = {
     small: '60px',
     medium: '110px',
     large: '150px',
+    larger: '155px',
   },
   color: {
     accent: '#FE5107',

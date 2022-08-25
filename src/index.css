@@ -73,12 +73,12 @@ svg {
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #0a0a0a;
+  background: white;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: #fe5107;
+  background: #0a0a0a;
 }
 
 /* Position and sizing of clickable cross button */
@@ -129,5 +129,5 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-overlay {
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 1);
 }

@@ -11,7 +11,10 @@ const GridLadder = styled.div`
 
 const GridNumbers = styled.h1`
   color: ${v.color.accent};
-  font-size: ${v.fs.largest};
+  font-size: ${v.fs.larger};
+  @media (min-width: ${v.ds.tablet}) {
+    font-size: ${v.fs.largest};
+  }
   font-weight: ${v.fw.bold};
   text-align: center;
 `;

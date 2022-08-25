@@ -18,14 +18,14 @@ const CoverSection = styled.section`
 const SocialIcons = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: ${v.size.smaller};
   width: fit-content;
-  padding-left: ${v.size.smaller};
-  padding-top: ${v.size.medium};
+  padding-top: ${v.size.small};
 `;
 
-const Link = styled.a`
+const SocialLink = styled.a`
   color: white;
+  padding: 10px;
+  background-color: ${({ backgroundColor }) => backgroundColor};
 `;
 
 const SubTitle = styled.p`
@@ -48,7 +48,7 @@ const HeroTitle = styled.h1`
 `;
 
 export default function Cover() {
-  const socialIconSize = 20;
+  const socialIconSize = 30;
   return (
     <CoverSection>
       <Container>
@@ -61,21 +61,37 @@ export default function Cover() {
       </Container>
 
       <SocialIcons>
-        <Link href='https://instagram.com' target='_blank'>
-          <FaInstagram size={socialIconSize} />
-        </Link>
-
-        <Link href='https://facebook.com' target='_blank'>
+        <SocialLink
+          backgroundColor='#3A5795'
+          href='https://facebook.com'
+          target='_blank'
+        >
           <FaFacebookF size={socialIconSize} />
-        </Link>
+        </SocialLink>
 
-        <Link href='https://linkedin.com' target='_blank'>
+        <SocialLink
+          backgroundColor='#0077B5'
+          href='https://linkedin.com'
+          target='_blank'
+        >
           <FaLinkedinIn size={socialIconSize} />
-        </Link>
+        </SocialLink>
 
-        <Link href='https://twitter.com' target='_blank'>
+        <SocialLink
+          backgroundColor='#D7005C'
+          href='https://instagram.com'
+          target='_blank'
+        >
+          <FaInstagram size={socialIconSize} />
+        </SocialLink>
+
+        <SocialLink
+          backgroundColor='#1C9CEB  '
+          href='https://twitter.com'
+          target='_blank'
+        >
           <FaTwitter size={socialIconSize} />
-        </Link>
+        </SocialLink>
       </SocialIcons>
     </CoverSection>
   );
