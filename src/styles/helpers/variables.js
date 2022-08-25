@@ -4,7 +4,7 @@ export const variables = {
     medium: '1rem',
     large: '1.5rem',
     larger: '3.2rem',
-    largest: '9vmin',
+    largest: '6rem',
   },
   fw: {
     regular: 400,
