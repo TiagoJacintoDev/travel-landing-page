@@ -19,20 +19,20 @@ export const Button = styled.button`
 `;
 
 export const Title = styled.h1`
-  font-size: ${v.fs.larger};
+  font-size: ${v.fs.largeLarger};
+  @media (min-width: ${v.ds.laptop}) {
+    font-size: ${v.fs.larger};
+  }
   font-family: ${v.ff.default};
   font-weight: ${v.fw.semiBold};
-  margin-bottom: ${v.size.smallest};
 `;
 
 export const SubTitle = styled.h2`
   font-size: ${v.fs.large};
   font-family: ${v.ff.default};
-  margin-bottom: calc(${v.size.smaller} * 1.75);
 `;
 
 export const Paragraph = styled.p`
   color: ${v.color.lightGray};
   font-family: ${v.ff.default};
-  margin-bottom: calc(${v.size.smaller} * 1.75);
 `;

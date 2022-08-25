@@ -15,12 +15,18 @@ const Section = styled.section`
   background-color: black;
 `;
 
+const Info = styled.div`
+  & > * {
+    margin-bottom: ${v.size.smaller};
+  }
+`;
+
 export default function AboutText() {
   return (
     <Section>
-      <Grid gap={v.size.medium}>
-        <img src={Image}></img>
-        <div>
+      <Grid gap={v.size.medium} style={{ alignItems: 'center' }}>
+        <img style={{ marginBottom: `${v.size.smaller}` }} src={Image}></img>
+        <Info>
           <Title>About Us</Title>
           <SubTitle>
             We will help you to enjoy a wonderful vacation with you family
@@ -38,7 +44,7 @@ export default function AboutText() {
           <Button>
             Read More <CgArrowLongRight size={20} />
           </Button>
-        </div>
+        </Info>
       </Grid>
     </Section>
   );

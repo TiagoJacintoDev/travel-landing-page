@@ -7,6 +7,5 @@ export const Grid = styled.div`
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
     column-gap: ${({ gap }) => gap};
-    align-items: center;
   }
 `;

@@ -13,11 +13,17 @@ const Wrapper = styled.div`
   color: white;
 `;
 
+const Info = styled.div`
+  & > * {
+    margin-bottom: ${v.size.smaller};
+  }
+`;
+
 export default function TripPlanerText() {
   return (
     <Wrapper>
       <Container>
-        <Grid gap={v.size.larger}>
+        <Grid gap={`clamp(10px, 50px, ${v.size.larger})`}>
           <div>
             <Title style={{ marginBottom: `${v.size.small}` }}>
               Explore the best version of the USA
@@ -26,7 +32,7 @@ export default function TripPlanerText() {
               Explore <VscArrowRight size={20} />
             </Button>
           </div>
-          <div>
+          <Info>
             <Paragraph>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
               eligendi sequi aspernatur impedit fugiat perspiciatis?
@@ -35,7 +41,7 @@ export default function TripPlanerText() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eius
               ipsa error esse corporis facere.
             </Paragraph>
-          </div>
+          </Info>
         </Grid>
       </Container>
     </Wrapper>

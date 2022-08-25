@@ -3,6 +3,7 @@ export const variables = {
     small: '0.6rem',
     medium: '1rem',
     large: '1.5rem',
+    largeLarger: '2.5rem',
     larger: '3.2rem',
     largest: '6rem',
   },
