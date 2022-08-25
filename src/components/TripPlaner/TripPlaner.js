@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { variables as v } from '../../styles/helpers/variables';
-import TripPlanerText from './TripPlanerText';
+import TripPlanerInfo from './TripPlanerInfo';
 import TripPlanerCarousel from './TripPlanerCarousel';
 
 const Section = styled.div`
@@ -11,7 +11,7 @@ const Section = styled.div`
 export default function TripPlaner() {
   return (
     <Section>
-      <TripPlanerText />
+      <TripPlanerInfo />
       <TripPlanerCarousel />
     </Section>
   );

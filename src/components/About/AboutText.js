@@ -1,5 +1,5 @@
 import { CgArrowLongRight } from 'react-icons/cg';
-import Image from '../../images/rice-terrace-vertical.jpg';
+import Image from '../../assets/images/rice-terrace-vertical.jpg';
 import { Grid } from '../../styles/layout/grid';
 import styled from 'styled-components';
 import { variables as v } from '../../styles/helpers/variables';
