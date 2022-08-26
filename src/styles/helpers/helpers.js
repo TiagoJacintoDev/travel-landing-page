@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { variables as v } from './variables';
 
 export const Container = styled.div`
-  width: min(${v.ds.desktop}, 100% - 120px);
+  width: min(${v.ds.desktop}, 100% - ${v.size.small});
   margin-inline: auto;
 `;
 

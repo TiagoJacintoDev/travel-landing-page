@@ -11,15 +11,15 @@ import { IoPlay } from 'react-icons/io5';
 import { variables as v } from '../styles/helpers/variables';
 import { Container, Button } from '../styles/helpers/helpers';
 
-const CoverSection = styled.section`
-  padding-top: ${v.size.large};
-`;
+const CoverSection = styled.section``;
 
 const SocialIcons = styled.ul`
   display: flex;
-  flex-direction: column;
+  @media (min-width: ${v.ds.tablet}) {
+    flex-direction: column;
+  }
+  padding-top: 210px;
   width: fit-content;
-  padding-top: ${v.size.small};
 `;
 
 const SocialLink = styled.a`
@@ -39,6 +39,9 @@ const SubTitle = styled.p`
 const HeroTitle = styled.h1`
   font-family: ${v.ff.default};
   font-size: ${v.fs.larger};
+  @media (max-width: ${v.ds.mobile}) {
+    font-size: calc(${v.fs.large} + 12px);
+  }
   @media (min-width: ${v.ds.laptop}) {
     font-size: ${v.fs.largest};
   }
@@ -47,16 +50,21 @@ const HeroTitle = styled.h1`
   margin-bottom: ${v.size.smaller};
 `;
 
+const containerStyle = {
+  position: 'relative',
+  top: '50%',
+  transform: 'translate(0%, 50%)',
+};
+
 export default function Cover() {
   const socialIconSize = 30;
   return (
     <CoverSection>
-      <Container>
-        {/*TODO: Center this div*/}
+      <Container style={containerStyle}>
         <SubTitle>We are the wonder of your weekend</SubTitle>
         <HeroTitle>Discover the world with our guide.</HeroTitle>
         <Button>
-          Start Tours <IoPlay size={20} />
+          Start Tour <IoPlay size={20} />
         </Button>
       </Container>
 
