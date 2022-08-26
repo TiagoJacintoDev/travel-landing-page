@@ -5,7 +5,10 @@ import TripPlanerCarousel from './TripPlanerCarousel';
 
 const Section = styled.div`
   background-color: ${v.color.lightDark};
-  padding: ${v.size.medium};
+  padding-block: ${v.size.smaller};
+  @media (min-width: ${v.ds.tablet}) {
+    padding-block: ${v.size.small};
+  }
 `;
 
 export default function TripPlaner() {

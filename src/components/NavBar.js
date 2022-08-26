@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
 import { slide as Menu } from 'react-burger-menu';
-import { useMediaQuery } from 'react-responsive';
 import { variables as v } from '../styles/helpers/variables';
 import { Container, Logo } from '../styles/helpers/helpers';
 
@@ -49,10 +48,7 @@ const NavItems = (
   </NavList>
 );
 
-export default function NavBar() {
-  const isMobile = useMediaQuery({
-    query: `(max-width: ${v.ds.tablet})`,
-  });
+export default function NavBar({ isMobile }) {
   return (
     <Container>
       <NavWrapper>

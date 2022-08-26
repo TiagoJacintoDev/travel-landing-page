@@ -25,11 +25,16 @@ export default function AboutText() {
   return (
     <Section>
       <Grid gap={v.size.medium} style={{ alignItems: 'center' }}>
-        <img style={{ marginBottom: `${v.size.smaller}` }} src={Image}></img>
+        <img
+          style={{
+            marginBottom: `${v.size.smaller}`,
+          }}
+          src={Image}
+        ></img>
         <Info>
           <Title>About Us</Title>
           <SubTitle>
-            We will help you to enjoy a wonderful vacation with you family
+            We will guide you through a wonderful vacation with you family.
           </SubTitle>
           <Paragraph>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam

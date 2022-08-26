@@ -8,7 +8,6 @@ import {
 } from '../styles/helpers/helpers';
 import CaveImage from '../assets/images/3563728_16x9.jpg';
 import SocialIcons from './SocialIcons';
-import { useMediaQuery } from 'react-responsive';
 
 const Wrapper = styled.div`
   color: white;
@@ -22,6 +21,8 @@ const Wrapper = styled.div`
 const Grid = styled.div`
   display: grid;
   justify-items: center;
+  align-items: center;
+  column-gap: ${v.size.smaller};
   @media (min-width: ${v.ds.tablet}) {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -38,13 +39,17 @@ const List = styled.ul`
   font-size: ${v.fs.medium};
   font-family: ${v.ff.default};
   list-style: none;
+
+  & li {
+    font-weight: ${v.fw.semiBold};
+  }
 `;
 
-export default function Footer() {
-  const isMobile = useMediaQuery({
-    query: `(max-width: ${v.ds.tablet})`,
-  });
+const bold = {
+  fontWeight: v.fw.bold,
+};
 
+export default function Footer({ isMobile }) {
   return (
     <Wrapper>
       <Container>
@@ -57,11 +62,10 @@ export default function Footer() {
             <Paragraph style={{ color: 'white' }}>
               Call us at 1-324-531-6342
             </Paragraph>
-            <SocialIcons />
           </Column>
 
           <Column>
-            <SubTitle>Quick Links</SubTitle>
+            <SubTitle style={bold}>Quick Links</SubTitle>
             <List>
               <li>Home</li>
               <li>Tours</li>
@@ -72,7 +76,7 @@ export default function Footer() {
           </Column>
           {!isMobile && (
             <Column>
-              <SubTitle>Resources</SubTitle>
+              <SubTitle style={bold}>Resources</SubTitle>
               <List>
                 <li>Support</li>
                 <li>Development</li>
@@ -84,7 +88,7 @@ export default function Footer() {
           )}
           {!isMobile && (
             <Column>
-              <SubTitle>Categories</SubTitle>
+              <SubTitle style={bold}>Categories</SubTitle>
               <List>
                 <li>Home</li>
                 <li>Tours</li>
@@ -95,6 +99,7 @@ export default function Footer() {
             </Column>
           )}
         </Grid>
+        <SocialIcons />
       </Container>
       <Paragraph
         style={{

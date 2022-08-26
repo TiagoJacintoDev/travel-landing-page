@@ -12,10 +12,10 @@ const Section = styled.section`
   background-position: top;
 `;
 
-export default function TopSection() {
+export default function TopSection({ isMobile }) {
   return (
     <Section>
-      <NavBar />
+      <NavBar isMobile={isMobile} />
       <Cover />
     </Section>
   );

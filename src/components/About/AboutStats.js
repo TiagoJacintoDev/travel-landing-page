@@ -3,10 +3,17 @@ import { variables as v } from '../../styles/helpers/variables';
 
 const GridLadder = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  @media (min-width: ${v.ds.tablet}) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
   margin-top: ${v.size.small};
   font-family: ${v.ff.default};
+  @media (max-width: ${v.ds.tablet}) {
+    & > * {
+      margin-bottom: ${v.size.smaller};
+    }
+  }
 `;
 
 const GridNumbers = styled.h1`
@@ -25,17 +32,23 @@ const GridText = styled.p`
 `;
 
 const CostumersArea = styled.div`
-  grid-column: 1 / 2;
+  @media (min-width: ${v.ds.tablet}) {
+    grid-column: 1 / 2;
+  }
 `;
 
 const ToursArea = styled.div`
-  grid-column: 2/3;
-  grid-row: 2;
+  @media (min-width: ${v.ds.tablet}) {
+    grid-column: 2/3;
+    grid-row: 2;
+  }
 `;
 
 const ExpertsArea = styled.div`
-  grid-column: 3/4;
-  grid-row: 3;
+  @media (min-width: ${v.ds.tablet}) {
+    grid-column: 3/4;
+    grid-row: 3;
+  }
 `;
 
 export default function AboutStats() {

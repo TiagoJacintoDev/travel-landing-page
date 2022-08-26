@@ -18,7 +18,9 @@ const SocialIcons = styled.ul`
   @media (min-width: ${v.ds.tablet}) {
     flex-direction: column;
   }
-  padding-top: 210px;
+  @media (max-width: ${v.ds.tablet}) {
+    padding-top: calc(${v.size.medium} * 2);
+  }
   width: fit-content;
 `;
 

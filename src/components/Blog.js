@@ -17,7 +17,10 @@ const Wrapper = styled.div`
 `;
 
 const BlogPost = styled.div`
-  padding-left: ${v.size.smaller};
+  padding-left: ${v.size.smallest};
+  @media (min-width: ${v.ds.tablet}) {
+    padding-left: ${v.size.smaller};
+  }
   padding-block: ${v.size.smaller};
   &[data-selected='true'] {
     background-color: white;
@@ -33,11 +36,14 @@ const BlogDate = styled.p`
 `;
 
 const BlogTitle = styled.h3`
-  font-size: ${v.fs.large};
+  font-size: ${v.fs.medium};
+  @media (min-width: ${v.ds.tablet}) {
+    font-size: ${v.fs.large};
+  }
   font-weight: ${v.fw.bold};
 `;
 
-export default function Blog() {
+export default function Blog({ isMobile }) {
   const [blogPostSelected, setBlogPostSelected] = useState(1);
 
   function changePost(blogPostId) {
@@ -64,7 +70,7 @@ export default function Blog() {
                 onClick={() => changePost(blogPost.id)}
                 data-selected={blogPost.id === blogPostSelected}
               >
-                <BlogDate>{blogPost.date}</BlogDate>
+                {!isMobile && <BlogDate>{blogPost.date}</BlogDate>}
                 <BlogTitle>{blogPost.title}</BlogTitle>
               </BlogPost>
             ))}
@@ -82,7 +88,10 @@ export default function Blog() {
                     <SubTitle style={{ marginBottom: v.size.smaller }}>
                       {blogPost.title}
                     </SubTitle>
-                    <Paragraph>{blogPost.paragraph}</Paragraph>
+                    <Paragraph style={{ marginBottom: v.size.smaller }}>
+                      {blogPost.paragraph}
+                    </Paragraph>
+                    {isMobile && <BlogDate>{blogPost.date}</BlogDate>}
                   </>
                 )
             )}

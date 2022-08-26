@@ -9,9 +9,9 @@ import {
 } from 'react-icons/fa';
 
 const SocialIconsList = styled.ul`
+  padding-top: ${v.size.small};
   display: flex;
   gap: ${v.size.smaller};
-  width: fit-content;
 `;
 
 const SocialLink = styled.a`
@@ -22,7 +22,7 @@ const SocialLink = styled.a`
 `;
 
 export default function SocialIcons({ isMobile }) {
-  const socialIconSize = 20;
+  const socialIconSize = 25;
   return (
     <SocialIconsList>
       <SocialLink href='https://facebook.com' target='_blank'>
