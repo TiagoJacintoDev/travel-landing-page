@@ -19,10 +19,12 @@ const Wrapper = styled.div`
 const BlogPost = styled.div`
   padding-left: ${v.size.smaller};
   padding-block: ${v.size.smaller};
-  margin-bottom: ${v.size.smaller};
   &[data-selected='true'] {
     background-color: white;
     color: black;
+  }
+  &:last-of-type {
+    margin-bottom: ${v.size.small};
   }
 `;
 
@@ -45,11 +47,11 @@ export default function Blog() {
   return (
     <Wrapper>
       <Container>
-        <Title style={{ textAlign: 'center' }}>
+        <Title style={{ textAlign: 'center', marginBottom: v.size.smaller }}>
           Read our awesome blog post for everyone
         </Title>
         <Paragraph
-          style={{ textAlign: 'center', marginBottom: `${v.size.smaller}` }}
+          style={{ textAlign: 'center', marginBottom: `${v.size.small}` }}
         >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque,
           dolor.
@@ -58,6 +60,7 @@ export default function Blog() {
           <div>
             {blogData.map(blogPost => (
               <BlogPost
+                style={{ borderBottom: `1px solid ${v.color.lightGray}` }}
                 onClick={() => changePost(blogPost.id)}
                 data-selected={blogPost.id === blogPostSelected}
               >
@@ -76,7 +79,9 @@ export default function Blog() {
                       style={{ marginBottom: `${v.size.smaller}` }}
                       src={blogPost.img}
                     />
-                    <SubTitle>{blogPost.title}</SubTitle>
+                    <SubTitle style={{ marginBottom: v.size.smaller }}>
+                      {blogPost.title}
+                    </SubTitle>
                     <Paragraph>{blogPost.paragraph}</Paragraph>
                   </>
                 )
