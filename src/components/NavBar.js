@@ -3,19 +3,13 @@ import { Link } from 'react-scroll';
 import { slide as Menu } from 'react-burger-menu';
 import { useMediaQuery } from 'react-responsive';
 import { variables as v } from '../styles/helpers/variables';
-import { Container } from '../styles/helpers/helpers';
+import { Container, Logo } from '../styles/helpers/helpers';
 
 const NavWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: ${v.size.smaller};
-`;
-
-const Logo = styled.h1`
-  font-family: ${v.ff.logo};
-  font-size: ${v.fs.large};
-  font-weight: ${v.fw.bold};
 `;
 
 const NavList = styled.ul`

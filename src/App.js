@@ -2,6 +2,7 @@ import TopSection from './sections/TopSection';
 import About from './components/About/About';
 import TripPlaner from './components/TripPlaner/TripPlaner';
 import Blog from './components/Blog';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <About />
       <TripPlaner />
       <Blog />
+      <Footer />
     </>
   );
 }

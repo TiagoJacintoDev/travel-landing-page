@@ -30,9 +30,18 @@ export const Title = styled.h1`
 export const SubTitle = styled.h2`
   font-size: ${v.fs.large};
   font-family: ${v.ff.default};
+  font-weight: ${v.fw.semiBold};
 `;
 
 export const Paragraph = styled.p`
+  font-size: ${v.fs.medium};
   color: ${v.color.lightGray};
   font-family: ${v.ff.default};
+`;
+
+export const Logo = styled.h1`
+  color: white;
+  font-family: ${v.ff.logo};
+  font-size: ${v.fs.large};
+  font-weight: ${v.fw.bold};
 `;
