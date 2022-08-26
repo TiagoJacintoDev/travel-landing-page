@@ -41,8 +41,6 @@ const List = styled.ul`
 `;
 
 export default function Footer() {
-  const socialIconSize = 20;
-
   const isMobile = useMediaQuery({
     query: `(max-width: ${v.ds.tablet})`,
   });
