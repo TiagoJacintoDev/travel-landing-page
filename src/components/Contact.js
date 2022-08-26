@@ -3,6 +3,7 @@ import { variables as v } from '../styles/helpers/variables';
 import { Title, SubTitle, Button, Paragraph } from '../styles/helpers/helpers';
 
 const Wrapper = styled.div`
+  color: white;
   padding-block: ${v.size.medium};
   background-color: black;
   display: flex;
@@ -23,7 +24,7 @@ const EmailInput = styled.input`
 
 export default function Contact() {
   return (
-    <Wrapper>
+    <Wrapper id='contact'>
       <Title style={{ marginBottom: v.size.smallest }}>
         Subscribe to Our Newsletter
       </Title>

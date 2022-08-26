@@ -10,7 +10,7 @@ const Section = styled.div`
 
 export default function TripPlaner() {
   return (
-    <Section>
+    <Section id='tripPlaner'>
       <TripPlanerInfo />
       <TripPlanerCarousel />
     </Section>

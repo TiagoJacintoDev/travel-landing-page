@@ -45,7 +45,7 @@ export default function Blog() {
   }
 
   return (
-    <Wrapper>
+    <Wrapper id='blog'>
       <Container>
         <Title style={{ textAlign: 'center', marginBottom: v.size.smaller }}>
           Read our awesome blog post for everyone

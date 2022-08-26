@@ -21,19 +21,31 @@ const NavList = styled.ul`
   }
   align-items: center;
   font-family: ${v.ff.default};
+  font-size: ${v.fs.medium};
 
   @media ((min-width: ${v.ds.tablet})) {
     flex-direction: row;
+  }
+
+  & a {
+    cursor: pointer;
   }
 `;
 
 const NavItems = (
   <NavList>
-    <Link smooth>About Us</Link>
-    <Link smooth>Trip Planer</Link>
-    <Link smooth>Blog</Link>
-    <Link smooth>Gallery</Link>
-    <Link smooth>Contact</Link>
+    <Link to='about' smooth>
+      About Us
+    </Link>
+    <Link to='tripPlaner' smooth>
+      Trip Planer
+    </Link>
+    <Link to='blog' smooth>
+      Blog
+    </Link>
+    <Link to='contact' smooth>
+      Contact
+    </Link>
   </NavList>
 );
 

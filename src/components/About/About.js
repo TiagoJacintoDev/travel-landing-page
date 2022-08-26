@@ -11,7 +11,7 @@ const SectionWrapper = styled.div`
 
 export default function About() {
   return (
-    <SectionWrapper>
+    <SectionWrapper id='about'>
       <Container>
         <AboutText />
         <AboutStats />
