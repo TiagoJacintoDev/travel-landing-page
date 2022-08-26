@@ -19,6 +19,7 @@ export const Button = styled.button`
 `;
 
 export const Title = styled.h1`
+  color: white;
   font-size: ${v.fs.largeLarger};
   @media (min-width: ${v.ds.laptop}) {
     font-size: ${v.fs.larger};
@@ -28,11 +29,13 @@ export const Title = styled.h1`
 `;
 
 export const SubTitle = styled.h2`
+  color: white;
   font-size: ${v.fs.large};
   font-family: ${v.ff.default};
 `;
 
 export const Paragraph = styled.p`
   color: ${v.color.lightGray};
+  font-size: ${v.fs.medium};
   font-family: ${v.ff.default};
 `;

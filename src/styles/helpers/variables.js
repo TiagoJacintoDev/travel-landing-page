@@ -1,7 +1,7 @@
 export const variables = {
   fs: {
     small: '0.6rem',
-    medium: '1rem',
+    medium: '1.2rem',
     large: '1.5rem',
     largeLarger: '2.5rem',
     larger: '3.2rem',
