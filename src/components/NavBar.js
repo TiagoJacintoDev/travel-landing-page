@@ -21,6 +21,7 @@ const NavList = styled.ul`
   align-items: center;
   font-family: ${v.ff.default};
   font-size: ${v.fs.medium};
+  font-weight: ${v.fw.semiBold};
 
   @media ((min-width: ${v.ds.tablet})) {
     flex-direction: row;

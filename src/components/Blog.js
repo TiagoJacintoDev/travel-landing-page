@@ -11,6 +11,10 @@ import { useState } from 'react';
 import { Grid } from '../styles/layout/grid';
 
 const Wrapper = styled.div`
+  padding-bottom: ${v.size.smaller};
+  @media (min-width: ${v.ds.tablet}) {
+    padding-bottom: ${v.size.small};
+  }
   font-family: ${v.ff.default};
   color: white;
   background-color: ${v.color.lightDark};

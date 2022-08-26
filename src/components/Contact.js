@@ -4,7 +4,10 @@ import { Title, Container, Button, Paragraph } from '../styles/helpers/helpers';
 
 const Wrapper = styled.div`
   color: white;
-  padding-block: ${v.size.medium};
+  padding-block: ${v.size.small};
+  @media (min-width: ${v.ds.tablet}) {
+    padding-block: ${v.size.medium};
+  }
   background-color: black;
 `;
 

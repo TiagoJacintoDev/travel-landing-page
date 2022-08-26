@@ -14,6 +14,7 @@ const Wrapper = styled.div`
 `;
 
 const Info = styled.div`
+  margin-top: ${v.size.smaller};
   & > * {
     margin-bottom: ${v.size.smaller};
   }
