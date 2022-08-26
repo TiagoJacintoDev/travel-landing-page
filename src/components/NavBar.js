@@ -29,6 +29,10 @@ const NavList = styled.ul`
 
   & a {
     cursor: pointer;
+    transition: color 1s;
+    &:hover {
+      color: ${v.color.lightGray};
+    }
   }
 `;
 

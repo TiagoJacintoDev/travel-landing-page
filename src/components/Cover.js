@@ -15,12 +15,11 @@ const CoverSection = styled.section``;
 
 const SocialIcons = styled.ul`
   display: flex;
+  position: absolute;
   @media (min-width: ${v.ds.tablet}) {
     flex-direction: column;
   }
-  @media (max-width: ${v.ds.tablet}) {
-    padding-top: calc(${v.size.medium} * 2);
-  }
+  padding-top: calc(${v.size.medium} * 2);
   width: fit-content;
 `;
 
