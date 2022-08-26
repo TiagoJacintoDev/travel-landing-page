@@ -16,6 +16,11 @@ export const Button = styled.button`
   border: none;
   padding: ${v.size.smaller} ${v.size.smaller};
   cursor: pointer;
+  transition: color 500ms, background-color 500ms;
+  &:hover {
+    color: ${v.color.accent};
+    background-color: ${v.color.white};
+  }
 `;
 
 export const Title = styled.h1`

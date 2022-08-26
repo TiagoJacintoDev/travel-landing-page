@@ -19,6 +19,10 @@ const SocialLink = styled.a`
   padding: 10px;
   border: 1px solid white;
   border-radius: 100%;
+  transition: background-color 500ms;
+  &:hover {
+    background-color: ${v.color.accent};
+  }
 `;
 
 export default function SocialIcons({ isMobile }) {
