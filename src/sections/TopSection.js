@@ -4,6 +4,9 @@ import Cover from '../components/Cover';
 import CoverImg from '../assets/images/indonesia-high-res.jpg';
 
 const Section = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: white;
   height: 100vh;
   background-image: url(${CoverImg});

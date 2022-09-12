@@ -15,11 +15,9 @@ const CoverSection = styled.section``;
 
 const SocialIcons = styled.ul`
   display: flex;
-  position: absolute;
   @media (min-width: ${v.ds.tablet}) {
     flex-direction: column;
   }
-  padding-top: calc(${v.size.medium} * 2);
   width: fit-content;
 `;
 
@@ -51,24 +49,19 @@ const HeroTitle = styled.h1`
   margin-bottom: ${v.size.smaller};
 `;
 
-const containerStyle = {
-  position: 'relative',
-  top: '50%',
-  transform: 'translate(0%, 50%)',
-};
-
 export default function Cover() {
   const socialIconSize = 30;
   return (
-    <CoverSection>
-      <Container style={containerStyle}>
-        <SubTitle>We are the wonder of your weekend</SubTitle>
-        <HeroTitle>Discover the world with our guide.</HeroTitle>
-        <Button>
-          Start Tour <IoPlay size={20} />
-        </Button>
-      </Container>
-
+    <>
+      <CoverSection>
+        <Container style={{marginLeft: '100px'}}>
+          <SubTitle>We are the wonder of your weekend</SubTitle>
+          <HeroTitle>Discover the world with our guide.</HeroTitle>
+          <Button>
+            Start Tour <IoPlay size={20} />
+          </Button>
+        </Container>
+      </CoverSection>
       <SocialIcons>
         <SocialLink
           backgroundColor='#3A5795'
@@ -102,6 +95,6 @@ export default function Cover() {
           <FaTwitter size={socialIconSize} />
         </SocialLink>
       </SocialIcons>
-    </CoverSection>
+    </>
   );
 }
