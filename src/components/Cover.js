@@ -11,8 +11,6 @@ import { IoPlay } from 'react-icons/io5';
 import { variables as v } from '../styles/helpers/variables';
 import { Container, Button } from '../styles/helpers/helpers';
 
-const CoverSection = styled.section``;
-
 const SocialIcons = styled.ul`
   display: flex;
   @media (min-width: ${v.ds.tablet}) {
@@ -53,15 +51,13 @@ export default function Cover() {
   const socialIconSize = 30;
   return (
     <>
-      <CoverSection>
-        <Container style={{marginLeft: '100px'}}>
-          <SubTitle>We are the wonder of your weekend</SubTitle>
-          <HeroTitle>Discover the world with our guide.</HeroTitle>
-          <Button>
-            Start Tour <IoPlay size={20} />
-          </Button>
-        </Container>
-      </CoverSection>
+      <Container>
+        <SubTitle>We are the wonder of your weekend</SubTitle>
+        <HeroTitle>Discover the world with our guide.</HeroTitle>
+        <Button>
+          Start Tour <IoPlay size={20} />
+        </Button>
+      </Container>
       <SocialIcons>
         <SocialLink
           backgroundColor='#3A5795'

@@ -31,6 +31,7 @@ body {
 
 /* Set core body defaults */
 body {
+  overflow-x: hidden;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
