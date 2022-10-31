@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { variables as v } from '../../styles/helpers/variables';
+import styled from "styled-components";
+import { variables as v } from "../../styles/helpers/variables";
 
 const GridLadder = styled.div`
   display: grid;

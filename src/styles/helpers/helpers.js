@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { variables as v } from './variables';
+import styled from "styled-components";
+import { variables as v } from "./variables";
 
 export const Container = styled.div`
   width: min(${v.ds.desktop}, 100% - ${v.size.small});

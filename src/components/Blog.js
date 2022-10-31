@@ -1,14 +1,14 @@
-import styled from 'styled-components';
-import { variables as v } from '../styles/helpers/variables';
+import styled from "styled-components";
+import { variables as v } from "../styles/helpers/variables";
 import {
   SubTitle,
   Paragraph,
   Container,
   Title,
-} from '../styles/helpers/helpers';
-import { blogData } from '../assets/data/blogData';
-import { useState } from 'react';
-import { Grid } from '../styles/layout/grid';
+} from "../styles/helpers/helpers";
+import { blogData } from "../assets/data/blogData";
+import { useState } from "react";
+import { Grid } from "../styles/layout/grid";
 
 const Wrapper = styled.div`
   padding-bottom: ${v.size.smaller};
@@ -26,7 +26,7 @@ const BlogPost = styled.div`
     padding-left: ${v.size.smaller};
   }
   padding-block: ${v.size.smaller};
-  &[data-selected='true'] {
+  &[data-selected="true"] {
     background-color: white;
     color: black;
   }
@@ -55,20 +55,20 @@ export default function Blog({ isMobile }) {
   }
 
   return (
-    <Wrapper id='blog'>
+    <Wrapper id="blog">
       <Container>
-        <Title style={{ textAlign: 'center', marginBottom: v.size.smaller }}>
+        <Title style={{ textAlign: "center", marginBottom: v.size.smaller }}>
           Read our awesome blog post for everyone
         </Title>
         <Paragraph
-          style={{ textAlign: 'center', marginBottom: `${v.size.small}` }}
+          style={{ textAlign: "center", marginBottom: `${v.size.small}` }}
         >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque,
           dolor.
         </Paragraph>
         <Grid gap={v.size.medium}>
           <div>
-            {blogData.map(blogPost => (
+            {blogData.map((blogPost) => (
               <BlogPost
                 style={{ borderBottom: `1px solid ${v.color.lightGray}` }}
                 onClick={() => changePost(blogPost.id)}
@@ -82,11 +82,11 @@ export default function Blog({ isMobile }) {
 
           <div>
             {blogData.map(
-              blogPost =>
+              (blogPost) =>
                 blogPost.id === blogPostSelected && (
                   <>
                     <img
-                      style={{ marginBottom: `${v.size.smaller}` }}
+                      style={{ marginBottom: v.size.smaller }}
                       src={blogPost.img}
                     />
                     <SubTitle style={{ marginBottom: v.size.smaller }}>

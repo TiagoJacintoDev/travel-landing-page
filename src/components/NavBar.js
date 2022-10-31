@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import { Link } from 'react-scroll';
-import { slide as Menu } from 'react-burger-menu';
-import { variables as v } from '../styles/helpers/variables';
-import { Container, Logo } from '../styles/helpers/helpers';
+import styled from "styled-components";
+import { Link } from "react-scroll";
+import { slide as Menu } from "react-burger-menu";
+import { variables as v } from "../styles/helpers/variables";
+import { Container, Logo } from "../styles/helpers/helpers";
 
 const NavWrapper = styled.div`
   display: flex;
@@ -38,16 +38,16 @@ const NavList = styled.ul`
 
 const NavItems = (
   <NavList>
-    <Link to='about' smooth>
+    <Link to="about" smooth>
       About Us
     </Link>
-    <Link to='tripPlaner' smooth>
+    <Link to="tripPlaner" smooth>
       Trip Planer
     </Link>
-    <Link to='blog' smooth>
+    <Link to="blog" smooth>
       Blog
     </Link>
-    <Link to='contact' smooth>
+    <Link to="contact" smooth>
       Contact
     </Link>
   </NavList>

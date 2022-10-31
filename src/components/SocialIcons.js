@@ -1,12 +1,12 @@
-import styled from 'styled-components';
-import { variables as v } from '../styles/helpers/variables';
+import styled from "styled-components";
+import { variables as v } from "../styles/helpers/variables";
 
 import {
   FaInstagram,
   FaFacebookF,
   FaLinkedinIn,
   FaTwitter,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
 const SocialIconsList = styled.ul`
   padding-top: ${v.size.small};
@@ -25,23 +25,23 @@ const SocialLink = styled.a`
   }
 `;
 
+const socialIconSize = 25;
 export default function SocialIcons({ isMobile }) {
-  const socialIconSize = 25;
   return (
     <SocialIconsList>
-      <SocialLink href='https://facebook.com' target='_blank'>
+      <SocialLink href="https://facebook.com" target="_blank">
         <FaFacebookF size={socialIconSize} />
       </SocialLink>
 
-      <SocialLink href='https://linkedin.com' target='_blank'>
+      <SocialLink href="https://linkedin.com" target="_blank">
         <FaLinkedinIn size={socialIconSize} />
       </SocialLink>
 
-      <SocialLink href='https://instagram.com' target='_blank'>
+      <SocialLink href="https://instagram.com" target="_blank">
         <FaInstagram size={socialIconSize} />
       </SocialLink>
 
-      <SocialLink href='https://twitter.com' target='_blank'>
+      <SocialLink href="https://twitter.com" target="_blank">
         <FaTwitter size={socialIconSize} />
       </SocialLink>
     </SocialIconsList>

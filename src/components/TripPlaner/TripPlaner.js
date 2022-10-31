@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { variables as v } from '../../styles/helpers/variables';
-import TripPlanerInfo from './TripPlanerInfo';
+import styled from "styled-components";
+import { variables as v } from "../../styles/helpers/variables";
+import TripPlanerInfo from "./TripPlanerInfo";
 
 const Section = styled.div`
   background-color: ${v.color.lightDark};
@@ -12,7 +12,7 @@ const Section = styled.div`
 
 export default function TripPlaner() {
   return (
-    <Section id='tripPlaner'>
+    <Section id="tripPlaner">
       <TripPlanerInfo />
     </Section>
   );

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { variables as v } from '../helpers/variables';
+import styled from "styled-components";
+import { variables as v } from "../helpers/variables";
 
 export const Grid = styled.div`
   @media (min-width: ${v.ds.tablet}) {

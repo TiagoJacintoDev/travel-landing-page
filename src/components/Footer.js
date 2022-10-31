@@ -1,13 +1,13 @@
-import styled from 'styled-components';
-import { variables as v } from '../styles/helpers/variables';
+import styled from "styled-components";
+import { variables as v } from "../styles/helpers/variables";
 import {
   Container,
   Paragraph,
   SubTitle,
   Logo,
-} from '../styles/helpers/helpers';
-import CaveImage from '../assets/images/3563728_16x9.jpg';
-import SocialIcons from './SocialIcons';
+} from "../styles/helpers/helpers";
+import CaveImage from "../assets/images/3563728_16x9.jpg";
+import SocialIcons from "./SocialIcons";
 
 const Wrapper = styled.div`
   color: white;
@@ -56,10 +56,10 @@ export default function Footer({ isMobile }) {
         <Grid>
           <Column>
             <Logo>TRAVELIA</Logo>
-            <Paragraph style={{ color: 'white' }}>
+            <Paragraph style={{ color: "white" }}>
               Would you like a free consultation?
             </Paragraph>
-            <Paragraph style={{ color: 'white' }}>
+            <Paragraph style={{ color: "white" }}>
               Call us at 1-324-531-6342
             </Paragraph>
           </Column>
@@ -103,9 +103,9 @@ export default function Footer({ isMobile }) {
       </Container>
       <Paragraph
         style={{
-          color: 'white',
+          color: "white",
           paddingBlock: v.size.small,
-          textAlign: 'center',
+          textAlign: "center",
         }}
       >
         © Copyright 2022. All rights reserved

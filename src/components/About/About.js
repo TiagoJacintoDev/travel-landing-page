@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import { variables as v } from '../../styles/helpers/variables';
-import AboutStats from './AboutStats';
-import AboutText from './AboutText';
-import { Container } from '../../styles/helpers/helpers';
+import styled from "styled-components";
+import { variables as v } from "../../styles/helpers/variables";
+import AboutStats from "./AboutStats";
+import AboutText from "./AboutText";
+import { Container } from "../../styles/helpers/helpers";
 
 const SectionWrapper = styled.div`
   background-color: black;
@@ -14,7 +14,7 @@ const SectionWrapper = styled.div`
 
 export default function About() {
   return (
-    <SectionWrapper id='about'>
+    <SectionWrapper id="about">
       <Container>
         <AboutText />
         <AboutStats />

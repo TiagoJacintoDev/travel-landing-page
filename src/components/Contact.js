@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { variables as v } from '../styles/helpers/variables';
-import { Title, Container, Button, Paragraph } from '../styles/helpers/helpers';
+import styled from "styled-components";
+import { variables as v } from "../styles/helpers/variables";
+import { Title, Container, Button, Paragraph } from "../styles/helpers/helpers";
 
 const Wrapper = styled.div`
   color: white;
@@ -35,14 +35,14 @@ const Form = styled.form`
 `;
 
 const containerStyle = {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
 };
 
 export default function Contact() {
   return (
-    <Wrapper id='contact'>
+    <Wrapper id="contact">
       <Container style={containerStyle}>
         <Title style={{ marginBottom: v.size.smallest }}>
           Subscribe to Our Newsletter
@@ -51,8 +51,8 @@ export default function Contact() {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, tenetur.
         </Paragraph>
         <Form>
-          <EmailInput type='email' placeholder='johndoe@gmail.com'></EmailInput>
-          <Button onClick={e => e.preventDefault()}>SUBSCRIBE</Button>
+          <EmailInput type="email" placeholder="johndoe@gmail.com"></EmailInput>
+          <Button type="button">SUBSCRIBE</Button>
         </Form>
       </Container>
     </Wrapper>

@@ -1,13 +1,13 @@
-import styled from 'styled-components';
-import { Grid } from '../../styles/layout/grid';
-import { variables as v } from '../../styles/helpers/variables';
+import styled from "styled-components";
+import { Grid } from "../../styles/layout/grid";
+import { variables as v } from "../../styles/helpers/variables";
 import {
   Title,
   Paragraph,
   Button,
   Container,
-} from '../../styles/helpers/helpers';
-import { VscArrowRight } from 'react-icons/vsc';
+} from "../../styles/helpers/helpers";
+import { VscArrowRight } from "react-icons/vsc";
 
 const Wrapper = styled.div`
   color: white;

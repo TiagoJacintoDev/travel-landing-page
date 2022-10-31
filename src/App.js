@@ -1,11 +1,11 @@
-import TopSection from './sections/TopSection';
-import About from './components/About/About';
-import TripPlaner from './components/TripPlaner/TripPlaner';
-import Blog from './components/Blog';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import { useMediaQuery } from 'react-responsive';
-import { variables as v } from './styles/helpers/variables';
+import TopSection from "./sections/TopSection";
+import About from "./components/About/About";
+import TripPlaner from "./components/TripPlaner/TripPlaner";
+import Blog from "./components/Blog";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import { useMediaQuery } from "react-responsive";
+import { variables as v } from "./styles/helpers/variables";
 
 export default function App() {
   const isMobile = useMediaQuery({

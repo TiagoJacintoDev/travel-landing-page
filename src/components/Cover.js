@@ -1,15 +1,15 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import {
   FaInstagram,
   FaFacebookF,
   FaLinkedinIn,
   FaTwitter,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
-import { IoPlay } from 'react-icons/io5';
+import { IoPlay } from "react-icons/io5";
 
-import { variables as v } from '../styles/helpers/variables';
-import { Container, Button } from '../styles/helpers/helpers';
+import { variables as v } from "../styles/helpers/variables";
+import { Container, Button } from "../styles/helpers/helpers";
 
 const SocialIcons = styled.ul`
   display: flex;
@@ -47,8 +47,8 @@ const HeroTitle = styled.h1`
   margin-bottom: ${v.size.smaller};
 `;
 
+const socialIconSize = 30;
 export default function Cover() {
-  const socialIconSize = 30;
   return (
     <>
       <Container>
@@ -60,33 +60,33 @@ export default function Cover() {
       </Container>
       <SocialIcons>
         <SocialLink
-          backgroundColor='#3A5795'
-          href='https://facebook.com'
-          target='_blank'
+          backgroundColor="#3A5795"
+          href="https://facebook.com"
+          target="_blank"
         >
           <FaFacebookF size={socialIconSize} />
         </SocialLink>
 
         <SocialLink
-          backgroundColor='#0077B5'
-          href='https://linkedin.com'
-          target='_blank'
+          backgroundColor="#0077B5"
+          href="https://linkedin.com"
+          target="_blank"
         >
           <FaLinkedinIn size={socialIconSize} />
         </SocialLink>
 
         <SocialLink
-          backgroundColor='#D7005C'
-          href='https://instagram.com'
-          target='_blank'
+          backgroundColor="#D7005C"
+          href="https://instagram.com"
+          target="_blank"
         >
           <FaInstagram size={socialIconSize} />
         </SocialLink>
 
         <SocialLink
-          backgroundColor='#1C9CEB  '
-          href='https://twitter.com'
-          target='_blank'
+          backgroundColor="#1C9CEB  "
+          href="https://twitter.com"
+          target="_blank"
         >
           <FaTwitter size={socialIconSize} />
         </SocialLink>

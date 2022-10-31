@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import NavBar from '../components/NavBar';
-import Cover from '../components/Cover';
-import CoverImg from '../assets/images/indonesia-high-res.jpg';
+import styled from "styled-components";
+import NavBar from "../components/NavBar";
+import Cover from "../components/Cover";
+import CoverImg from "../assets/images/indonesia-high-res.jpg";
 
 const Section = styled.section`
   display: flex;

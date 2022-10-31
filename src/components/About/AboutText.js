@@ -1,14 +1,14 @@
-import { CgArrowLongRight } from 'react-icons/cg';
-import Image from '../../assets/images/rice-terrace-vertical.jpg';
-import { Grid } from '../../styles/layout/grid';
-import styled from 'styled-components';
-import { variables as v } from '../../styles/helpers/variables';
+import { CgArrowLongRight } from "react-icons/cg";
+import Image from "../../assets/images/rice-terrace-vertical.jpg";
+import { Grid } from "../../styles/layout/grid";
+import styled from "styled-components";
+import { variables as v } from "../../styles/helpers/variables";
 import {
   Button,
   Title,
   Paragraph,
   SubTitle,
-} from '../../styles/helpers/helpers';
+} from "../../styles/helpers/helpers";
 
 const Section = styled.section`
   color: white;
@@ -24,7 +24,7 @@ const Info = styled.div`
 export default function AboutText() {
   return (
     <Section>
-      <Grid gap={v.size.medium} style={{ alignItems: 'center' }}>
+      <Grid gap={v.size.medium} style={{ alignItems: "center" }}>
         <img
           style={{
             marginBottom: `${v.size.smaller}`,
